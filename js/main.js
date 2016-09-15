@@ -13,7 +13,7 @@ function validateForm(){
 	   		}
 	   	}
 	  	else{
-  			alert ("Ingrese datos válidos (A-Z)");
+  			return alert ("Ingrese datos válidos (A-Z)");
 	  	}
 	}
   	var apellido = document.getElementById("lastname").value;
@@ -25,11 +25,11 @@ function validateForm(){
 		if(!apellido.search(n)){
 	   		n=/[a-z]/g;
 	   		if(!apellido.search(n)){
-	   			alert("La primera letra debe empezar con maýuscula")
+	   			return alert("La primera letra debe empezar con maýuscula")
 	   		}
 	   	}
 	  	else{
-  			alert ("Ingrese datos válidos (A-Z)");
+  			return alert ("Ingrese datos válidos (A-Z)");
 	  	}
 	}
 	var valor_1 = document.getElementById("input-email").value;
